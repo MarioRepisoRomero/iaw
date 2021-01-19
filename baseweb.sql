@@ -3,7 +3,7 @@ use pruebas;
 create table productos (
 codigo varchar(100) primary key not null,
 descripcion varchar(100),
-precio varchar(100),
+precio int not null,
 stock int not null);
 
 create table clientes (
