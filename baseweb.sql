@@ -1,7 +1,7 @@
 CREATE DATABASE pruebas;
 use pruebas;
 create table productos (
-codigo varchar(100) primary key not null,
+cod varchar(100) primary key not null,
 descripcion varchar(100),
 precio int not null,
 stock int not null);
