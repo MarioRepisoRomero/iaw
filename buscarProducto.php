@@ -2,11 +2,12 @@
 $servername = "localhost";
 $username = "php";
 $password = "1234";
-$dbname = "pruebas";
-$codigo = $_POST['codigo'];
-$descripcion = $_POST['descripcion'];
-$precio = $_POST['precio'];
-$stock = $_POST['stock'];
+$database = "pruebas";
+
+$codigo = $_GET['codigo'];
+$descripcion = $_GET['descripcion'];
+$precio = $_GET['precio'];
+$stock = $_GET['stock'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
@@ -17,14 +18,14 @@ if ($conn->connect_error) {
 
 $opcion=$_GET["opcion"];
 
-$texto=$_GET["texto"];
+$texto=$_GET["search"];
 
 $sql = "SELECT * FROM productos where";
 
 if ($_GET["opcion"]=="codigo") 
 {
 
-	$sql = $sql." codigo like '%$texto%'";
+	$sql = $sql." cod like '%$texto%'";
 
 }
 elseif ($_GET["opcion"]=="descripcion")
@@ -49,12 +50,11 @@ elseif ($_GET["opcion"]=="stock")
 	if ($result->num_rows > 0) {
 	    // output data of each row
 	    while($row = $result->fetch_assoc()) {
-	        echo "<br> codigo: ". $row["codigo"]. " - descripcion: ". $row["descripcion"].. " - Precio: ". $row["precio"]. " - stock: ". $row["stock"]. "<br>";
+	        echo "<br> codigo: ". $row["cod"]. " - descripcion: ". $row["descripcion"]. " - Precio: ". $row["precio"]. " - stock: ". $row["stock"]. "<br>";
 	    }
 	} else {
-	    echo "0 resultados";
+	    echo "No hay resultados";
 	}
 
 	$conn->close();
-?>
 ?>
