@@ -1,5 +1,5 @@
 Este equipo de trabajo para la Tienda Web consta de los siguientes integrantes:
-|- Jorge Javier Cordón, Fernando Gámez, Álvaro Azuaga y Mario Repiso.
+ |- Jorge Javier Cordón, Fernando Gámez, Álvaro Azuaga y Mario Repiso.
 
 Reparto de trabajo:
  |- Jorge Javier Cordón y Fernando Gámez realizan la parte de HTML.
