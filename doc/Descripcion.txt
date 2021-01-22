@@ -24,3 +24,6 @@ buscarClientes.html
 
 buscarClientes.php
  |- Conecta con la base de datos para ver si lo que hemos establecido en buscarClientes.html coincide con los registros.
+
+baseweb.sql
+ |- El cómo se han creado las tablas productos y clientes en la base de datos pruebas.
