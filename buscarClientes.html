@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Formulario  Buscar.</title>
+</head>
+
+	<body>
+		<h1>Tienda Web V2.0</h1>
+		<h2>Buscar Cliente</h2>
+		<form action="buscarClientes.php" >
+		<label for="search">busqueda:</label>
+		<input type="text" id="search" name="search">
+		<input type="submit"><br>
+		
+		<br>
+		
+		<select id="opcion" name="opcion">
+			<option value="0">...</option>
+			<option value="nombre" name="nombre">Por nombre</option>
+			<option value="apellido" name="apellido">Por apellido</option>
+			<option value="dni" name="dni" >Por dni</option>
+			<option value="email" name="email" >Por email</option>
+		</select>
+		</form>
+	</body>
+</html>
