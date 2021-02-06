@@ -24,13 +24,10 @@
 
 	Pequeña mejora visual del index.html.
 
-
-
-
 TIENDA WEB 3.0
 
 · 5 de frebrero
 
-	El equipo estuvimos trabajando el la Tienda Web 3.0 orientada a objetos.
+	El equipo estuvimos trabajando en la Tienda Web 3.0 orientada a objetos.
 	Mejora de GET a POST.
 	La página index.html con menú, fondo y estilo.
