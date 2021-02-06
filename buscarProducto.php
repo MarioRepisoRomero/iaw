@@ -1,60 +1,27 @@
 <?php
+
+require './ClassProducto.php';
+
+// Variables
 $servername = "localhost";
 $username = "php";
 $password = "1234";
 $database = "pruebas";
 
-$codigo = $_GET['codigo'];
-$descripcion = $_GET['descripcion'];
-$precio = $_GET['precio'];
-$stock = $_GET['stock'];
-
-// Create connection
+// Conexión con la base de datos
 $conn = new mysqli($servername, $username, $password, $database);
-// Check connection
+
+// Verificar conexión
 if ($conn->connect_error) {
-  die("ERROR: " . $conn->connect_error);
+    die("Error de conexión: " . $conn->connect_error);
 }
 
-$opcion=$_GET["opcion"];
+$busqueda = $_POST["search"];
+$tipoBusqueda = $_POST["opcion"];
 
-$texto=$_GET["search"];
+// Buscar producto
+$productoExistente = new Producto("prueba","prueba","prueba","prueba");
+$productoExistente->buscarProducto($busqueda,$tipoBusqueda,$conn);
+$conn->close();
 
-$sql = "SELECT * FROM productos where";
-
-if ($_GET["opcion"]=="codigo") 
-{
-
-	$sql = $sql." cod like '%$texto%'";
-
-}
-elseif ($_GET["opcion"]=="descripcion")
-{
-
-	$sql = $sql." descripcion like '%$texto%'";
-
-}
-elseif ($_GET["opcion"]=="precio")
-{
-
-	$sql = $sql." precio like '%$texto%'";
-
-}
-elseif ($_GET["opcion"]=="stock")
-{
-
-	$sql = $sql." stock like '%$texto%'";
-}
-	$result = $conn->query($sql);
-
-	if ($result->num_rows > 0) {
-	    // output data of each row
-	    while($row = $result->fetch_assoc()) {
-	        echo "<br> codigo: ". $row["cod"]. " - descripcion: ". $row["descripcion"]. " - Precio: ". $row["precio"]. " - stock: ". $row["stock"]. "<br>";
-	    }
-	} else {
-	    echo "No hay resultados";
-	}
-
-	$conn->close();
 ?>
