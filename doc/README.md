@@ -24,7 +24,7 @@
 
 	Pequeña mejora visual del index.html.
 
-[-]
+
 
 
 TIENDA WEB 3.0
