@@ -27,3 +27,15 @@ buscarClientes.php
 
 baseweb.sql
  |- El cómo se han creado las tablas productos y clientes en la base de datos pruebas.
+
+ClassCliente.php
+ |- Viene definida la clase cliente.
+
+ClassProducto.php
+ |- Viene definida la clase producto.
+
+style.css
+ |- El estilo del index.html
+
+bg.jpg
+ |- Fondo del index.html
