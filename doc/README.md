@@ -33,7 +33,12 @@ TIENDA WEB 3.0
 	Álvaro Azuaga y Mario Repiso realizan la parte de PHP.
 
 · 5 de febrero
+
 	Jorge y Fernando actualizan los HTML de buscar y insertar tanto clienes como productos.
+	
 	Mario y Álvaro actualizan los PHP para orientarlos a objetos.
+	
 	Álvaro añade una mejora actualizando de GET a POST.
+	
 	Álvaro rehace la página index.html con menú, fondo y estilo.
+	
