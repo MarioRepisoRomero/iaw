@@ -28,13 +28,13 @@ TIENDA WEB 3.0
 
 · Reparto de trabajo:
 
-	Jorge Javier Cordón y Fernando Gámez realizan la parte de HTML.
+	Jorge Javier Cordón realizan la parte de HTML.
 
 	Álvaro Azuaga y Mario Repiso realizan la parte de PHP.
 
 · 5 de febrero
 
-	Jorge y Fernando actualizan los HTML de buscar y insertar tanto clienes como productos.
+	Jorge y Álvaro actualizan los HTML de buscar y insertar tanto clienes como productos.
 	
 	Mario y Álvaro actualizan los PHP para orientarlos a objetos.
 	
