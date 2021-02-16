@@ -28,7 +28,7 @@ TIENDA WEB 3.0
 
 · Reparto de trabajo:
 
-	Jorge Javier Cordón realizan la parte de HTML.
+	Jorge Javier Cordón realiza la parte de HTML.
 
 	Álvaro Azuaga y Mario Repiso realizan la parte de PHP.
 
