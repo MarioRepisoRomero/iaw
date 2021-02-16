@@ -26,8 +26,14 @@
 
 TIENDA WEB 3.0
 
-· 5 de frebrero
+· Reparto de trabajo:
 
-	El equipo estuvimos trabajando en la Tienda Web 3.0 orientada a objetos.
-	Mejora de GET a POST.
-	La página index.html con menú, fondo y estilo.
+	Jorge Javier Cordón y Fernando Gámez realizan la parte de HTML.
+
+	Álvaro Azuaga y Mario Repiso realizan la parte de PHP.
+
+· 5 de febrero
+	Jorge y Fernando actualizan los HTML de buscar y insertar tanto clienes como productos.
+	Mario y Álvaro actualizan los PHP para orientarlos a objetos.
+	Álvaro añade una mejora actualizando de GET a POST.
+	Álvaro rehace la página index.html con menú, fondo y estilo.
