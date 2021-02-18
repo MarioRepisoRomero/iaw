@@ -42,7 +42,7 @@ TIENDA WEB 3.0
 
 	-Jorge ha realizado el fichero insertarProductos.php.
 	
-	-Jorge ha puesto el metodo POST en insertarClientes.html, insertar.html, buscar.html, buscarClientes.html. 
+	-Jorge ha puesto el método POST en insertarClientes.html, insertar.html, buscar.html, buscarClientes.html. 
 	
 	-Mario ha realizado el fichero buscarProductos.php.
 	
