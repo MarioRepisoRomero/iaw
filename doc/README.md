@@ -26,19 +26,36 @@
 
 TIENDA WEB 3.0
 
-· Reparto de trabajo:
-
-	Jorge Javier Cordón realiza la parte de HTML.
-
-	Álvaro Azuaga y Mario Repiso realizan la parte de PHP.
-
 · 5 de febrero
 
-	Jorge y Álvaro actualizan los HTML de buscar y insertar tanto clienes como productos.
+. Reparto de trabajo:
+
+	Jorge Javier Cordón y Mario Repiso realiza la parte de php sobre productos orientado a objetos.
+
+	Álvaro Azuaga realiza la parte de php sobre Clientes y las clases orientado a objetos.
 	
-	Mario y Álvaro actualizan los PHP para orientarlos a objetos.
+. Problema
+
+	Fernando ha dejado de contribuir en el trabajo.
+
+· 6 de febrero
+
+	-Jorge ha realizado el fichero insertarProductos.php.
 	
-	Álvaro añade una mejora actualizando de GET a POST.
+	-Jorge ha puesto el metodo POST en insertarClientes.html, insertar.html, buscar.html, buscarClientes.html. 
 	
-	Álvaro rehace la página index.html con menú, fondo y estilo.
+	-Mario ha realizado el fichero buscarProductos.php.
+	
+	-Álvaro ha realizado los ficheros buscarClientes.php y insertarClientes.php.
+	
+	-Álvaro tambien ha realizado el ClassCliente.php y el ClassProducto.php.
+	
+	-Nos hemos reunido y actualizado el index.html para añadirle menú, fondo y css.
+	
+	-Álvaro ha actualizado la descrición con los nuevos ficheros ya probados en conjunto.
+	
+	-README actualizado por Mario.
+	
+	-Alvaro se ha encargado de hacer los commits de la WEB 3.0.
+	
 	
