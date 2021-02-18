@@ -30,7 +30,7 @@ TIENDA WEB 3.0
 
 . Reparto de trabajo:
 
-	Jorge Javier Cordón y Mario Repiso realiza la parte de php sobre productos orientado a objetos.
+	Jorge Javier Cordón y Mario Repiso realizan la parte de php sobre productos orientado a objetos.
 
 	Álvaro Azuaga realiza la parte de php sobre Clientes y las clases orientado a objetos.
 	
@@ -50,9 +50,9 @@ TIENDA WEB 3.0
 	
 	-Álvaro tambien ha realizado el ClassCliente.php y el ClassProducto.php.
 	
-	-Nos hemos reunido y actualizado el index.html para añadirle menú, fondo y css.
+	-Nos hemos reunido Jorge, Álvaro y Mario para actualizar el index.html añadiendo menú, fondo y css.
 	
-	-Álvaro ha actualizado la descrición con los nuevos ficheros ya probados en conjunto.
+	-Álvaro ha actualizado la descripción con los nuevos ficheros ya probados en conjunto.
 	
 	-README actualizado por Mario.
 	
