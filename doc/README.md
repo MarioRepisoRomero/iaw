@@ -53,9 +53,9 @@ TIENDA WEB 3.0
 	-Nos hemos reunido Jorge, Álvaro y Mario para actualizar el index.html añadiendo menú, fondo y css.
 	
 	-Álvaro ha actualizado la descripción con los nuevos ficheros ya probados en conjunto.
-	
-	-README actualizado por Mario.
-	
+
 	-Alvaro se ha encargado de hacer los commits de la WEB 3.0.
 	
-	
+· 18 de febrero
+
+	-README actualizado por Mario.
