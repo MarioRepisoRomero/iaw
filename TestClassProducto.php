@@ -45,7 +45,7 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
         $productosAntes = $resultado->num_rows;
 
 
-        $productoNuevo = new producto("123", "123", "123", "123", "1234@gmail.com");
+        $productoNuevo = new producto("123", "123", "123", "123");
 
         $productoNuevo->insertarProducto($conn);
 
@@ -93,7 +93,7 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
         //creo un objeto Cliente, y le pongo valores al azar como en el código real
 
 
-        $buscador = new producto("234","234","234","234","234");
+        $buscador = new producto("234","234","234","234");
 
 
 
