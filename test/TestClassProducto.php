@@ -9,7 +9,7 @@
 /**
  * Description of SalarioTest
  *
- * @author -andrés
+ * @author -equipo2
  */
 
 require 'vendor/autoload.php';
@@ -25,10 +25,10 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
         $servername = "localhost";
         $username = "php";
         $password = "1234";
-        $dbname = "pruebas";
+        $database = "pruebas";
 
         // Establecer conexión con la base de datos
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($servername, $username, $password, $database);
 
         // Verificar la conexión
         if ($conn->connect_error) {
@@ -43,9 +43,9 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
 
         // Consulta para realizar la busqueda en la base de datos
         $productosAntes = $resultado->num_rows;
-		
 
-        $productoNuevo = new producto("123", "123", "123", "123");
+
+        $productoNuevo = new producto("71", "desc", "50", "50");
 
         $productoNuevo->insertarProducto($conn);
 
@@ -58,7 +58,7 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals($productosAntes + 1, $productosDespues, "El producto se ha insertado correctamente");
 
         //Segunda tanda
-        $sqlPrueba = "select * from productos where cod like '123';";
+        $sqlPrueba = "select * from productos where cod like '71';";
         $resultado = $conn->query($sqlPrueba);
 
         // Consulta para realizar la busqueda en la base de datos
@@ -70,18 +70,16 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
 
 
     }
-
-
-    public function testBuscarProducto()
+    public function testBuscarProductoCodigo()
     {
 
         $servername = "localhost";
         $username = "php";
         $password = "1234";
-        $dbname = "pruebas";
+        $database = "pruebas";
 
         // Establecer conexión con la base de datos
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($servername, $username, $password, $database);
 
         // Verificar la conexión
         if ($conn->connect_error) {
@@ -93,15 +91,114 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
         //creo un objeto Cliente, y le pongo valores al azar como en el código real
 
 
-        $buscador = new producto("234","234","234","234");
+        $buscador = new producto("1","1","1","1");
 
 
 
         //lanzo una peticion cliente->buscar("Ped","onom",$conn) que tiene que ser resultado == 1
-        $resultado = $buscador->buscar("Pedro","onom",$conn);
+        $resultado = $buscador->buscarProducto("50","codigo",$conn);
 
-        $this->assertEquals(2,$resultado,"Hemos buscado a Pedro y no estaba???");
+        $this->assertEquals(null,$resultado,"Hemos buscado el código 50");
+
+    }
+
+
+    public function testBuscarProductoDescripcion()
+    {
+
+        $servername = "localhost";
+        $username = "php";
+        $password = "1234";
+        $database = "pruebas";
+
+        // Establecer conexión con la base de datos
+        $conn = new mysqli($servername, $username, $password, $database);
+
+        // Verificar la conexión
+        if ($conn->connect_error) {
+            die("Error de conexión: " . $conn->connect_error);
+        }
+
+        //primero inserto 5 filas en la tabla
+
+        //creo un objeto Cliente, y le pongo valores al azar como en el código real
+
+
+        $buscador = new producto("1","1","1","1");
+
+
+
+        //lanzo una peticion cliente->buscar("Ped","onom",$conn) que tiene que ser resultado == 1
+        $resultado = $buscador->buscarProducto("desc","descripcion",$conn);
+
+        $this->assertEquals(null,$resultado,"Hemos buscado la descripcion desc");
+
+    }
+
+
+    public function testBuscarProductoPrecio()
+    {
+
+        $servername = "localhost";
+        $username = "php";
+        $password = "1234";
+        $database = "pruebas";
+
+        // Establecer conexión con la base de datos
+        $conn = new mysqli($servername, $username, $password, $database);
+
+        // Verificar la conexión
+        if ($conn->connect_error) {
+            die("Error de conexión: " . $conn->connect_error);
+        }
+
+        //primero inserto 5 filas en la tabla
+
+        //creo un objeto Cliente, y le pongo valores al azar como en el código real
+
+
+        $buscador = new producto("1","1","1","1");
+
+
+
+        //lanzo una peticion cliente->buscar("Ped","onom",$conn) que tiene que ser resultado == 1
+        $resultado = $buscador->buscarProducto("34","precio",$conn);
+
+        $this->assertEquals(null,$resultado,"Hemos buscado el precio 34");
+
+    }
+
+
+    public function testBuscarProductoStock()
+    {
+
+        $servername = "localhost";
+        $username = "php";
+        $password = "1234";
+        $database = "pruebas";
+
+        // Establecer conexión con la base de datos
+        $conn = new mysqli($servername, $username, $password, $database);
+
+        // Verificar la conexión
+        if ($conn->connect_error) {
+            die("Error de conexión: " . $conn->connect_error);
+        }
+
+        //primero inserto 5 filas en la tabla
+
+        //creo un objeto Cliente, y le pongo valores al azar como en el código real
+
+
+        $buscador = new producto("1","1","1","1");
+
+
+
+        //lanzo una peticion cliente->buscar("Ped","onom",$conn) que tiene que ser resultado == 1
+        $resultado = $buscador->buscarProducto("34","stock",$conn);
+
+        $this->assertEquals(null,$resultado,"Hemos buscado el stock 34");
 
     }
 }
-?>	
+?>
