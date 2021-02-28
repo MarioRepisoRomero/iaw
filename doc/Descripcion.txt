@@ -39,3 +39,12 @@ style.css
 
 bg.jpg
  |- Fondo del index.html
+
+phpunit.xml
+ |- Para poder ejecutar los tests, es preciso crear un archivo llamado phpunit.xml en la raíz del proyecto, indica que se utilicen colores para indicar si el test ha sido positivo o negativo (verde/rojo) e indica la ruta donde se encuentran los tests.
+
+TestClassCliente.php
+ |- Se utiliza para comprobar que la parte del código de clientes funciona como debe.
+
+TestClassProducto.php
+ |- Se utiliza para comprobar que la parte del código de productos funciona como debe.
