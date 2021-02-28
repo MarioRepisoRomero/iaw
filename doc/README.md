@@ -59,3 +59,24 @@ TIENDA WEB 3.0
 · 18 de febrero
 
 	-README actualizado por Mario.
+
+PHPUNIT EN TIENDA WEB 3.0
+
+· 28 de febrero
+
+Reparto de trabajo
+
+Mario realiza el Test orientado a los productos.
+Álvaro y Jorge realizan el Test orientado a los clientes.
+
+Trabajo realizado
+
+- Mario ha realizado el fichero TestClassProducto.php
+- Álvaro y Jorge han realizado el fichero TestClassCliente.php
+- Álvaro y Mario han realizado el fichero phpunit.xml
+- Hemos juntado los archivos para probarlo en la máquina de Álvaro con phpunit en dev instalado previamente, se han probado los test y nos da el OK con 10 tests y 12 assertions.
+- Jorge actualiza el README.md
+
+Problema
+
+- Había un fallo en el construct de ClassCliente.php que nos impedía ejecutar los tests correctamente porque el orden era incorrecto.
