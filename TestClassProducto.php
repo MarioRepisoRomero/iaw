@@ -43,7 +43,7 @@ class ProductoTest extends \PHPUnit\Framework\TestCase
 
         // Consulta para realizar la busqueda en la base de datos
         $productosAntes = $resultado->num_rows;
-
+		
 
         $productoNuevo = new producto("123", "123", "123", "123");
 
