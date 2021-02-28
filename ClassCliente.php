@@ -19,7 +19,7 @@ private $fmail;
 
 //Comportamiento
 
-function __construct($fdni,$fnom,$fape,$fdate,$fmail) {
+function __construct($fnom,$fape,$fdni,$fdate,$fmail) {
 $this->fdni = $fdni;
 $this->fnom = $fnom;
 $this->fape = $fape;
@@ -48,7 +48,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'equipo2tiendaweb@gmail.com';                     // SMTP username
-    $mail->Password   = 'password';                               // SMTP password
+    $mail->Password   = 'Equipillo2TW';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
