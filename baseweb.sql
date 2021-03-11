@@ -1,3 +1,4 @@
+DROP IF EXIST pruebas;
 CREATE DATABASE pruebas;
 
 use pruebas;
