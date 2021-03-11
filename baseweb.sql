@@ -1,4 +1,4 @@
-DROP IF EXIST pruebas;
+DROP DATABASE IF EXIST pruebas;
 CREATE DATABASE pruebas;
 
 use pruebas;
